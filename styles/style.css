@@ -1,0 +1,8 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: "Bebas Neue", sans-serif; */
+
+/* aplicar fuente general */
+body {
+    font-family: "Bebas Neue", sans-serif;
+}
