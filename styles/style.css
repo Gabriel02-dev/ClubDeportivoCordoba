@@ -268,6 +268,48 @@ footer {
 
 
 /* pagina merchandising */
+.flex-merch {
+    display: flex;
+    flex-direction: column;
+}
+.titulo-merch {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-size: 80px;
+}
+.grid-article-merch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px 500px;
+    justify-items: center;
+    justify-content: space-around;
+}
+.cartas-merch {
+    margin: 25px 0;
+    padding: 20px;
+}
+.cartas-texto {
+    text-align: center;
+}
+.cartas-texto p {
+    font-size: 60px;
+}
 
 
 /* pagina contacto */
+.flex-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    margin-bottom: 40px;
+}
+.flex-contacto article {
+    margin-top: 40px;
+}
+.flex-contacto h1 {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-size: 80px;
+}
