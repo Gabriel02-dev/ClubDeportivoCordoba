@@ -1,0 +1,49 @@
+@use '../utilities/variables';
+
+.flex-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    margin-bottom: 40px;
+
+    h1 {
+        text-align: center;
+        color: white;
+        margin: 10px 0;
+        font-size: 80px;
+    }
+
+    article {
+        margin-top: 40px;
+    }
+}
+
+.contacto-extra {
+    text-align: center;
+    margin: 100px 100px;
+    h2 {
+        font-size: variables.$h2-contacto;
+        color: variables.$h2-color;
+    }
+    p {
+        color: variables.$h2-color;
+    }
+    .iframe-size {
+        width: 800px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 375px) {
+    .flex-contacto h1 {
+        font-size: 60px;
+    }
+
+    .contacto-extra {
+        margin: 80px 20px;
+        .iframe-size {
+            width: 250px;
+            height: 400px
+        }
+    }   
+}

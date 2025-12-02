@@ -1,0 +1,315 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: "Bebas Neue", sans-serif; */
+
+/* aplicar fuente general */
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #0A3455;
+}
+
+/* header */
+nav {
+    font-size: 24px;
+}
+.bg-nav {
+    background-color: #B02635;
+}
+.logo {
+    width: 40px;
+    border: 1px solid #B02635;
+    border-radius: 10px;
+}
+.nav-modificado {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.links-modificados {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 5px;
+}
+.links-modificados:hover{
+    color: #B02635;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width: 991px) {
+    .boton-modificado {
+    background-color: white;
+    }
+    .nav-modificado {
+        flex-direction: row;
+    }
+}
+
+/* main */
+.grid-bienvenida {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 450px;
+    align-items: center;
+    grid-template-areas: "texto-bienvenida img-bienvenida"
+    "texto-bienvenida img-bienvenida";
+}
+.texto-bienvenida {
+    grid-area: texto-bienvenida;
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.texto-bienvenida h1 {
+    font-size: 100px;
+    margin: 0;
+}
+.texto-bienvenida p {
+    margin: 0px;
+}
+main section figure {
+    display: flex;
+    justify-content: center;
+}
+.img-bienvenida {
+    grid-area: img-bienvenida;
+    width: 600px;
+}
+
+.grid-historia {
+    margin: 150px 100px;
+    display: grid;
+    grid-template-rows:
+    300px 400px;
+    grid-template-areas: "texto-historia"
+    "img-historia";
+}
+.texto-historia {
+    grid-area: texto-historia;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.texto-historia h1 {
+    font-size: 100px;
+}
+.img-historia {
+    grid-area: img-historia;
+}
+
+/* footer */
+footer {
+    padding-bottom: 1px;
+    background-color: #B02635;
+    color: black;
+    margin: 0;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:
+    150px 25px;
+    grid-template-areas: "footer-redes footer-info footer-contacto"
+    "footer-copy footer-copy footer-copy";
+    justify-items: center;
+}
+.footer-redes {
+    grid-area: footer-redes;
+}
+.footer-redes h1 {
+    font-size: 25px;
+    margin: 0;
+}
+.logo-redes {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+.footer-info {
+    grid-area: footer-info;
+}
+.footer-info h1 {
+    font-size: 25px;
+    margin: 0;
+}
+.footer-info p {
+    margin: 0;
+    font-size: 13px;
+}
+.footer-contacto {
+    grid-area: footer-contacto;
+    font-size: 25px;    
+}
+.footer-contacto a {
+    text-decoration: none;
+    color: black;
+}
+.footer-copy {
+    font-size: 15px;
+    grid-area: footer-copy;
+}
+
+
+/* mobile */
+@media (max-width: 991px) {
+    .grid-bienvenida {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 700px;
+        grid-template-areas: "texto-bienvenida "
+        "img-bienvenida";
+    }
+    .texto-bienvenida {
+        margin: 0;
+        font-size: 24px;
+    }
+    .texto-bienvenida h1 {
+        font-size: 100px;
+    }
+    .img-bienvenida {
+        width: 800px;
+    }
+
+    .grid-historia {
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        360px 400px;
+        grid-template-areas: "texto-historia"
+        "img-historia";
+        margin: 0;
+    }
+    .texto-historia {
+        font-size: 24px;
+    }
+    .texto-historia h1 {
+        font-size: 100px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        60px 140px 28px 22px;
+        grid-template-areas: "footer-redes" "footer-info" "footer-contacto"
+        "footer-copy";
+        justify-items: start;
+    }
+    .footer-redes h1{
+        font-size: 20px;
+    }
+    .logo-redes {
+        width: 30px;
+    }
+    .footer-info h1 {
+        font-size: 20px;
+    }
+    .footer-contacto {
+        font-size: 20px;
+    }
+}
+
+
+/* pagina instalaciones */
+.titulo-instalaciones {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-size: 80px;
+}
+.main-instalaciones {
+    margin: 0 30px 30px 30px;
+    padding: 0;
+}
+.texto-columna-2 {
+    margin-right: 50px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+/* paginas disciplinas */
+.flex-article {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 30px;
+    align-items: center;
+}
+.titulo-disciplinas {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 80px;
+}
+.p-disciplinas {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-right: 30px;
+}
+.img-disciplinas {
+    width: 450px;
+}
+@media (max-width: 991px) {
+    .flex-article {
+        flex-direction: column;
+    }
+    .flex-article-media {
+        flex-direction: column-reverse;
+    }
+    .p-disciplinas {
+        margin-top: 40px;
+        margin-right: 0;
+    }
+}
+
+
+/* pagina merchandising */
+.flex-merch {
+    display: flex;
+    flex-direction: column;
+}
+.titulo-merch {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-size: 80px;
+}
+.grid-article-merch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 600px 500px;
+    justify-items: center;
+    justify-content: space-around;
+}
+.cartas-merch {
+    margin: 25px 0;
+    padding: 20px;
+}
+.cartas-texto {
+    text-align: center;
+}
+.cartas-texto p {
+    font-size: 60px;
+}
+
+
+/* pagina contacto */
+.flex-contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    margin-bottom: 40px;
+}
+.flex-contacto article {
+    margin-top: 40px;
+}
+.flex-contacto h1 {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-size: 80px;
+}

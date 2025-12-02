@@ -1,0 +1,47 @@
+.titulo-disciplinas {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 80px;
+}
+.flex-article {
+    display: flex;
+    flex-direction: row;
+    margin: 100px 30px;
+    align-items: center;
+
+    .img-disciplinas {
+        width: 450px;
+    }
+    .p-disciplinas {
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            margin-right: 30px;
+    }    
+}
+
+@media (max-width: 375px) {
+    .titulo-disciplinas {
+        font-size: 60px;
+    }
+    .flex-article {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .img-disciplinas {
+            width: 350px;
+        }
+
+        .p-disciplinas {
+            margin-right: 0;
+            font-size: 18px;
+        }
+    }
+
+    .flex-article-media {
+        flex-direction: column-reverse;
+    }
+}

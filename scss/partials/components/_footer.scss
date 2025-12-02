@@ -1,0 +1,87 @@
+footer {
+    padding-bottom: 1px;
+    background-color: #B02635;
+    color: black;
+    margin: 0;
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:
+        150px 25px;
+        grid-template-areas: "footer-redes footer-info footer-contacto"
+        "footer-copy footer-copy footer-copy";
+        justify-items: center;
+
+        .footer-redes {
+            grid-area: footer-redes;
+
+            h1 {
+                font-size: 25px;
+                margin: 0;
+            }
+            .logo-redes {
+                width: 40px;
+                border: 1px solid white;
+                border-radius: 100px;
+            }  
+        }
+        
+        .footer-info {
+            grid-area: footer-info;
+
+            h1 {
+                font-size: 25px;
+                margin: 0;
+            }
+            p {
+                margin: 0;
+                font-size: 13px;
+            }
+        }
+
+        .footer-contacto {
+            grid-area: footer-contacto;
+            font-size: 25px;
+            
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .footer-copy {
+            font-size: 15px;
+            grid-area: footer-copy;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    footer .footer-grid {
+        grid-template-columns: 375px;
+        grid-template-rows:
+        60px 140px 28px 22px;
+        grid-template-areas: "footer-redes" "footer-info" "footer-contacto"
+        "footer-copy";
+        justify-items: start;
+    
+        .footer-redes {
+            
+            h1 {
+                font-size: 20px;
+            }
+            .logo-redes {
+                width: 30px;
+            }
+        }
+
+        .footer-info h1 {
+            font-size: 20px;
+        }
+
+        .footer-contacto {
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.flex-merch {
+    display: flex;
+    flex-direction: column;
+    
+    .titulo-merch {
+        text-align: center;
+        color: white;
+        margin: 10px 0;
+        font-size: 80px;
+    }
+    .grid-article-merch {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 600px 500px;
+        justify-items: center;
+        justify-content: space-around;
+    
+        .cartas-merch {
+            margin: 25px 0;
+            padding: 20px;
+
+            .cartas {
+                width: 260px;
+                height: 250px;
+            }
+
+            .cartas-texto {
+                text-align: center;
+            
+                p {
+                    font-size: 60px;
+                }
+            }    
+        }
+    }  
+}
+
+@media (max-width: 375px) {
+    .flex-merch {
+        .titulo-merch {
+            font-size: 60px;
+        }
+        .grid-article-merch {
+            grid-template-columns: 375px;
+            grid-template-rows: 500px 500px;
+        }
+    }    
+}

@@ -1,0 +1,14 @@
+// base
+@use './partials/base/tipografia';
+
+// COMPONENTS
+@use './partials/components/header';
+@use './partials/components/mian-bienvenida';
+@use './partials/components/footer';
+@use './partials/components/instalaciones';
+@use './partials/components/disciplinas';
+@use './partials/components/merchandising';
+@use './partials/components/contacto';
+
+// UTILITIES
+@use './partials/utilities/variables';

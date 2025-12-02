@@ -1,0 +1,35 @@
+.titulo-instalaciones {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    font-size: 80px;
+}
+
+.main-instalaciones {
+    margin: 0;
+    margin-bottom: 50px;
+    
+    .texto-columna-2 {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .titulo-instalaciones {
+        margin: 10px 0;
+        font-size: 60px;
+    }        
+
+    .main-instalaciones .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .texto-columna-2 {
+        margin-top: 20px;
+    }
+}

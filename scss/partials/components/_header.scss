@@ -1,0 +1,39 @@
+/* header */
+nav {
+    font-size: 24px;
+    background-color: #B02635;
+    
+    .logo {
+        width: 40px;
+        border: 1px solid #B02635;
+        border-radius: 10px;
+    }
+
+    .nav-modificado {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .links-modificados {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 5px;
+
+            &:hover {
+                color: #B02635;
+                background-color: white;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .boton-modificado {
+        background-color: white;
+    }
+    nav .nav-modificado {
+        flex-direction: row;
+    }
+}
