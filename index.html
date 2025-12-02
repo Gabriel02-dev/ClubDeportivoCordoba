@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--    AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Inicio</title>
@@ -35,22 +39,20 @@
     <main>
         <section class="grid-bienvenida">
             <div class="texto-bienvenida">
-                <h1>bienvenidos</h1>
-                <p>Somos una institución dedicada a promover el deporte, la formación integral y el crecimiento personal de todas las edades. Nuestro club nació con el objetivo de ofrecer un espacio seguro, inclusivo y profesional donde cada persona pueda desarrollar su pasión por la actividad física, mejorar su bienestar y formar parte de una comunidad deportiva comprometida.
+                <h1 class="animate__animated animate__bounceIn">bienvenidos</h1>
+                <p data-aos="fade-right">Somos una institución dedicada a promover el deporte, la formación integral y el crecimiento personal de todas las edades. Nuestro club nació con el objetivo de ofrecer un espacio seguro, inclusivo y profesional donde cada persona pueda desarrollar su pasión por la actividad física, mejorar su bienestar y formar parte de una comunidad deportiva comprometida.
 
                 En nuestras instalaciones encontrarás diversas disciplinas, entrenadores calificados y un ambiente familiar que nos caracteriza desde nuestros inicios. Te invitamos a recorrer nuestras secciones, conocer nuestras actividades y sumarte a esta gran familia cordobesa.</p>
             </div>
             <figure>    
-                <img class="img-bienvenida" src="./assets/main.png" alt="">
+                <img class="img-bienvenida" src="./assets/main.png" alt="" data-aos="fade-left">
             </figure>
         </section>
         <section class="grid-historia">
             <div class="texto-historia">
-                <h1>nuestra historia</h1>
-                <p>El Club Deportivo Córdoba fue fundado con la idea de crear un lugar donde el deporte y los valores humanos fueran protagonistas. Desde sus primeros años, el club se convirtió en un punto de encuentro para jóvenes y adultos que buscaban practicar disciplinas como fútbol, básquet, vóley y natación, creciendo con el apoyo de socios, familias y deportistas de toda la ciudad.
-
+                <h1 class="animate__animated animate__bounceIn">nuestra historia</h1>
+                <p data-aos="fade-right">El Club Deportivo Córdoba fue fundado con la idea de crear un lugar donde el deporte y los valores humanos fueran protagonistas. Desde sus primeros años, el club se convirtió en un punto de encuentro para jóvenes y adultos que buscaban practicar disciplinas como fútbol, básquet, vóley y natación, creciendo con el apoyo de socios, familias y deportistas de toda la ciudad.
                 A lo largo del tiempo, ampliamos nuestras instalaciones, incorporamos nuevas actividades y formamos equipos competitivos que representaron al club en distintos torneos regionales. Hoy seguimos trabajando con la misma dedicación de siempre, enfocándonos en el desarrollo deportivo, la educación física y el espíritu de compañerismo que nos identifica.
-
                 Nuestra historia continúa escribiéndose día a día con cada persona que decide ser parte de este club.</p>
             </div>
             <figure>
@@ -95,5 +97,10 @@
     
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
