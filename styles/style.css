@@ -34,7 +34,7 @@ nav .nav-modificado .links-modificados:hover {
   border-radius: 10px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .boton-modificado {
     background-color: white;
   }
@@ -93,7 +93,7 @@ main section figure .img-bienvenida {
   grid-area: img-historia;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .grid-bienvenida {
     margin-top: 50px;
     grid-template-rows: 300px 350px;
@@ -177,7 +177,7 @@ footer .footer-grid .footer-copy {
   grid-area: footer-copy;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   footer .footer-grid {
     grid-template-columns: 375px;
     grid-template-rows: 60px 140px 28px 22px;
@@ -216,7 +216,7 @@ footer .footer-grid .footer-copy {
   align-items: center;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .titulo-instalaciones {
     margin: 10px 0;
     font-size: 60px;
@@ -253,7 +253,7 @@ footer .footer-grid .footer-copy {
   margin-right: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .titulo-disciplinas {
     font-size: 60px;
   }
@@ -305,7 +305,7 @@ footer .footer-grid .footer-copy {
   font-size: 60px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .flex-merch .titulo-merch {
     font-size: 60px;
   }
@@ -346,7 +346,7 @@ footer .footer-grid .footer-copy {
   height: 600px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .flex-contacto h1 {
     font-size: 60px;
   }
