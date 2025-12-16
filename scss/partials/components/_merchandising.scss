@@ -1,12 +1,15 @@
+@use '../utilities/extend';
+
 .flex-merch {
     display: flex;
     flex-direction: column;
     
     .titulo-merch {
-        text-align: center;
-        color: white;
-        margin: 10px 0;
-        font-size: 80px;
+        @extend %titulo;
+        // text-align: center;
+        // color: white;
+        // margin: 10px 0;
+        // font-size: 80px;
     }
     .grid-article-merch {
         display: grid;

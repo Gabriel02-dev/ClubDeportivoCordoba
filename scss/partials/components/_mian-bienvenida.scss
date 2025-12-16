@@ -1,9 +1,12 @@
+@use '../utilities/mixing';
+
 .grid-bienvenida {
+    @include mixing.grid (center);
     margin-top: 100px;
-    display: grid;
+    // display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 450px;
-    align-items: center;
+    // align-items: center;
     grid-template-areas: "texto-bienvenida img-bienvenida"
     "texto-bienvenida img-bienvenida";
 
@@ -62,7 +65,7 @@ main section figure {
     .grid-bienvenida {
         margin-top: 50px;
         grid-template-rows: 300px 350px;
-        grid-template-columns: 375px;
+        grid-template-columns: auto;
         grid-template-areas: "texto-bienvenida "
         "img-bienvenida";
     
@@ -82,7 +85,7 @@ main section figure {
     .grid-historia {
         grid-template-rows:
         400px 270px;
-        grid-template-columns: 375px;
+        grid-template-columns: auto;
         grid-template-areas: "texto-historia"
         "img-historia";
         margin: 0;

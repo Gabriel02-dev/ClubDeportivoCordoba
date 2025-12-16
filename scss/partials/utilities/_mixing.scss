@@ -1,0 +1,18 @@
+// nav-flex
+@mixin flex ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+// footer-grid
+@mixin grid-footer ($justify) {
+    display: grid;
+    justify-items: center;
+}
+
+// main-index-grid
+@mixin grid ($aling) {
+    display: grid;
+    align-items: $aling;
+}

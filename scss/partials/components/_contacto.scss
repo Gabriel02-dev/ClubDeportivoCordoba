@@ -1,4 +1,5 @@
 @use '../utilities/variables';
+@use '../utilities/extend';
 
 .flex-contacto {
     display: flex;
@@ -7,10 +8,11 @@
     margin-bottom: 40px;
 
     h1 {
-        text-align: center;
-        color: white;
-        margin: 10px 0;
-        font-size: 80px;
+        @extend %titulo;
+        // text-align: center;
+        // color: white;
+        // margin: 10px 0;
+        // font-size: 80px;
     }
 
     article {
@@ -42,8 +44,8 @@
     .contacto-extra {
         margin: 80px 20px;
         .iframe-size {
-            width: 250px;
-            height: 400px
+            width: 350px;
+            height: 350px
         }
     }   
 }

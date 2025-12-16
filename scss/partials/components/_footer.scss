@@ -1,3 +1,5 @@
+@use '../utilities/mixing';
+
 footer {
     padding-bottom: 1px;
     background-color: #B02635;
@@ -5,13 +7,14 @@ footer {
     margin: 0;
 
     .footer-grid {
-        display: grid;
+        @include mixing.grid-footer (center);
+        // display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows:
         150px 25px;
         grid-template-areas: "footer-redes footer-info footer-contacto"
         "footer-copy footer-copy footer-copy";
-        justify-items: center;
+        // justify-items: center;
 
         .footer-redes {
             grid-area: footer-redes;

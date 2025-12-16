@@ -43,11 +43,11 @@ nav .nav-modificado .links-modificados:hover {
   }
 }
 .grid-bienvenida {
-  margin-top: 100px;
   display: grid;
+  align-items: center;
+  margin-top: 100px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 450px;
-  align-items: center;
   grid-template-areas: "texto-bienvenida img-bienvenida" "texto-bienvenida img-bienvenida";
 }
 .grid-bienvenida .texto-bienvenida {
@@ -97,7 +97,7 @@ main section figure .img-bienvenida {
   .grid-bienvenida {
     margin-top: 50px;
     grid-template-rows: 300px 350px;
-    grid-template-columns: 375px;
+    grid-template-columns: auto;
     grid-template-areas: "texto-bienvenida " "img-bienvenida";
   }
   .grid-bienvenida .texto-bienvenida {
@@ -112,7 +112,7 @@ main section figure .img-bienvenida {
   }
   .grid-historia {
     grid-template-rows: 400px 270px;
-    grid-template-columns: 375px;
+    grid-template-columns: auto;
     grid-template-areas: "texto-historia" "img-historia";
     margin: 0;
   }
@@ -136,10 +136,10 @@ footer {
 }
 footer .footer-grid {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 150px 25px;
   grid-template-areas: "footer-redes footer-info footer-contacto" "footer-copy footer-copy footer-copy";
-  justify-items: center;
 }
 footer .footer-grid .footer-redes {
   grid-area: footer-redes;
@@ -197,16 +197,28 @@ footer .footer-grid .footer-copy {
     font-size: 20px;
   }
 }
-.titulo-instalaciones {
+.flex-contacto h1, .flex-merch .titulo-merch, .titulo-disciplinas, .titulo-instalaciones {
   text-align: center;
   color: white;
   margin: 10px 0;
   font-size: 80px;
 }
 
+.texto-instalaciones {
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  margin: 0 150px 50px 150px;
+}
+
 .main-instalaciones {
   margin: 0;
   margin-bottom: 50px;
+}
+.main-instalaciones .carrosel-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .main-instalaciones .texto-columna-2 {
   font-size: 20px;
@@ -215,11 +227,27 @@ footer .footer-grid .footer-copy {
   display: flex;
   align-items: center;
 }
+.main-instalaciones .otrasIntalaciones {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-instalaciones .otrasIntalaciones .carrosel-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
 @media (max-width: 450px) {
   .titulo-instalaciones {
     margin: 10px 0;
     font-size: 60px;
+  }
+  .texto-instalaciones {
+    margin: 50px;
   }
   .main-instalaciones .row {
     display: flex;
@@ -228,15 +256,11 @@ footer .footer-grid .footer-copy {
   .texto-columna-2 {
     margin-top: 20px;
   }
+  .otrasIntalaciones p {
+    text-align: center;
+    margin: 25px 25px;
+  }
 }
-.titulo-disciplinas {
-  text-align: center;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 0;
-  font-size: 80px;
-}
-
 .flex-article {
   display: flex;
   flex-direction: row;
@@ -277,12 +301,6 @@ footer .footer-grid .footer-copy {
   display: flex;
   flex-direction: column;
 }
-.flex-merch .titulo-merch {
-  text-align: center;
-  color: white;
-  margin: 10px 0;
-  font-size: 80px;
-}
 .flex-merch .grid-article-merch {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -320,12 +338,6 @@ footer .footer-grid .footer-copy {
   margin: 0 40px;
   margin-bottom: 40px;
 }
-.flex-contacto h1 {
-  text-align: center;
-  color: white;
-  margin: 10px 0;
-  font-size: 80px;
-}
 .flex-contacto article {
   margin-top: 40px;
 }
@@ -354,8 +366,8 @@ footer .footer-grid .footer-copy {
     margin: 80px 20px;
   }
   .contacto-extra .iframe-size {
-    width: 250px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
   }
 }
 

@@ -1,9 +1,12 @@
+@use '../utilities/extend';
+
 .titulo-disciplinas {
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-size: 80px;
+    @extend %titulo;
+    // text-align: center;
+    // color: white;
+    // margin-top: 10px;
+    // margin-bottom: 0;
+    // font-size: 80px;
 }
 .flex-article {
     display: flex;
